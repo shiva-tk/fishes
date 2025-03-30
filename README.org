@@ -2,3 +2,5 @@
 
 A simulation of a school of fish avoiding some sharks.
 Inspired by [[https://www.instagram.com/reel/DFaHy1dtfNV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==][this]] video I saw.
+
+[[./assets/fishes.gif]]
