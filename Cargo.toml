@@ -1,10 +1,9 @@
 [package]
-name = "www-wasm"
-version = "0.1.0"
 authors = ["Shiva Tamil Kumaran <shivatk01@gmail.com>"]
-description = "A simulation of a school of fish"
-repository = "https://github.com/shiva-tk/fishes"
 edition = "2021"
+name = "fishes"
+publish = false
+version = "0.0.0"
 
 [lib]
 crate-type = ["cdylib"]
@@ -12,17 +11,17 @@ crate-type = ["cdylib"]
 [dependencies]
 js-sys = "0.3"
 wasm-bindgen = "0.2"
+rand = "0.8"
+getrandom = { version = "0.2", features = ["js"] }
 
 [dependencies.web-sys]
 version = "0.3"
 features = [
-  'Document',
-  'Element',
-  'HtmlCanvasElement',
-  'WebGlBuffer',
-  'WebGlVertexArrayObject',
-  'WebGl2RenderingContext',
-  'WebGlProgram',
-  'WebGlShader',
-  'Window',
+    "CanvasRenderingContext2d",
+    "Document",
+    "Element",
+    "HtmlCanvasElement",
+    "Window",
+    "console",
+    "Performance"
 ]

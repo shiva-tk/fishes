@@ -13,9 +13,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'index.html'
         }),
-      new WasmPackPlugin({
-          crateDirectory: path.resolve(__dirname, ".")
-      }),
+        new WasmPackPlugin({
+            crateDirectory: path.resolve(__dirname, ".")
+        }),
     ],
     mode: 'development',
     experiments: {
